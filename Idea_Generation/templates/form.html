@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../static/css/form.css" />
+</head>
+<body>
+    <div id="theme">
+        <h1>アイデア8連ガチャ</h1>
+    </div>
+
+    <div id="subtitle">
+        <h2>-発想法とアイデア評価を用いてGPT3.5の発想力を強化する-</h2>
+    </div>
+    <div style="margin-top: 5%"></div>
+    <div>
+        <h3>下のフォームに問題を入力すると、その問題を解決するアイデアが返ってきます。</h3>
+    </div>
+    <div class="form-container">
+        <form id="post" method="POST">
+            <label for="user_input">問題  :</label>
+            <input type="text" name="user_input" id="user_input">
+            <input type="submit" value="Submit"><br>
+        </form>
+    </div>
+    <p></p>
+    <div id="notice">
+        <h3>注意</h3>
+        <p>実行完了に5分程度かかる可能性があります。</p>
+        <p>戻ったり、再読み込みせずしばらく放置していてください。</p>
+        <p>また、あなたの実行環境が原因ではないエラーが出た場合には、ページ戻りをしてもう一度Submitを行ってください。</p>
+    </div>
+    <p></p>
+    <div id="introduction">
+        <h3>仕組み</h3>
+        <p>詳しくは↓の文書を見てください。</p>
+        <a href="https://docs.google.com/document/d/1ksxJ3bIzAvmdVf-H227nyH685H_Xbq-jppOtdgJuNT4/edit?usp=sharing" target="_blank">
+            このプログラムの概要について
+        </a>
+    </div>
+    <p></p>
+    <div id="impression">
+        <h3>感動ポイント</h3>
+        <p>・発想法を用いることで、GPT3.5の日本語プロンプトでもそれなりに良いアイデアが出る点</p>
+        <p>・GPTが出したアイデアをGPTが評価し、厳選することで、人間は良いアイデアだけを見ることが出来る点</p>
+        <p>・embeddingと距離を用いることで、似たような複数のアイデアを人間が確認しなくて良い点</p>
+    <div>
+</body>
+</html>

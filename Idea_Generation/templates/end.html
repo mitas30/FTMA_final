@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <title>ガチャ結果のページ
+    </title>
+    <link rel="stylesheet" href="../static/css/styles.css" />
+</head>
+<body>
+  <div id='result'>ガチャ結果</div>
+  <div id='modalsContainer1' class='containers1'></div>
+  <div id='modalsContainer2' class='containers1'></div>
+  <div id='modalsContainer3' class='containers1'></div>
+  <div id='modalsContainer4' class='containers1'></div>
+  <div id='modalsContainer5' class='containers2'></div>
+  <div id='modalsContainer6' class='containers2'></div>
+  <div id='modalsContainer7' class='containers2'></div>
+  <div id='modalsContainer8' class='containers2'></div>
+  {% for item in session['list'] %}
+  <div id={{loop.index}} data-name={{item.name}} data-detail={{item.detail}} data-score={{item.total_score}}></div>
+  {% endfor %}
+  <script src="../static/js/main.js"></script>
+</body>
+</html>
