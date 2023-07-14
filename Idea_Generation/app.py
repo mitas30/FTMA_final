@@ -7,7 +7,7 @@ import numpy as np
 
 app = Flask(__name__)
 app.secret_key = 'mitas30'
-openai.api_key = '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'
+openai.api_key = 'your_API_Key(公開するとAPIが自動的に無効になるみたいです。すみません。)'
 #10roopでもかなり時間がかかる(5分程度)
 max_roop=8
 selection1=10
